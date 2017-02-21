@@ -19,6 +19,7 @@
 		8E6406DA1E5B3C2100B1F772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6406D91E5B3C2100B1F772 /* Main.storyboard */; };
 		8E6406DD1E5B3CDD00B1F772 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6406DC1E5B3CDD00B1F772 /* background.jpg */; };
 		8E87F6081E5B3A31009AF301 /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E87F6061E5B3A31009AF301 /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ED5E5711E5C3C9C00114A34 /* Flavors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5E5701E5C3C9C00114A34 /* Flavors.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8E87F6031E5B3A31009AF301 /* RWPickFlavor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWPickFlavor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E87F6061E5B3A31009AF301 /* RWPickFlavor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWPickFlavor.h; sourceTree = "<group>"; };
 		8E87F6071E5B3A31009AF301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED5E5701E5C3C9C00114A34 /* Flavors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Flavors.plist; sourceTree = "<group>"; };
 		AB6F25B421B09D0F8434ABE5 /* Pods-RWPickFlavor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWPickFlavor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RWPickFlavor/Pods-RWPickFlavor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				8E6406C61E5B3B6800B1F772 /* Views */,
 				8E6406DB1E5B3C8400B1F772 /* Resources */,
 				8E87F6071E5B3A31009AF301 /* Info.plist */,
+				8ED5E5701E5C3C9C00114A34 /* Flavors.plist */,
 			);
 			path = RWPickFlavor;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED5E5711E5C3C9C00114A34 /* Flavors.plist in Resources */,
 				8E6406DA1E5B3C2100B1F772 /* Main.storyboard in Resources */,
 				8E6406DD1E5B3CDD00B1F772 /* background.jpg in Resources */,
 			);

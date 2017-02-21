@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2C6DF4699EF50B8A688AA141B4D5E2F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6B1714E816AE794962516E2ECBB40A5A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AB83E3DB6957AD3A1B5AE92A30C5BAA8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD0B989480C32EBDB31398153A7FC79F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

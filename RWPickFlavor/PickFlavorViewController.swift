@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 import MBProgressHUD
 
 public class PickFlavorViewController: UIViewController, UICollectionViewDelegate {
@@ -46,40 +45,11 @@ public class PickFlavorViewController: UIViewController, UICollectionViewDelegat
     
     showLoadingHUD()  // <-- Add this line
     
-    // 1
-    Alamofire.request(
-      .GET, "http://www.raywenderlich.com/downloads/Flavors.plist",
-      parameters: nil,
-      encoding: .PropertyList(.XMLFormat_v1_0, 0), headers: nil)
-      .responsePropertyList { [weak self] (_, _, result) -> Void in
+    hideLoadingHUD()  // <-- Add this line
         
-        // 2
-        guard let strongSelf = self else {
-          return
-        }
-        
-        strongSelf.hideLoadingHUD()  // <-- Add this line
-        
-        var flavorsArray: [[String : String]]! = nil
-        
-        // 3
-        switch result {
-
-        case .Success(let array):
-          if let array = array as? [[String : String]] {
-            flavorsArray = array
-          }
-        
-        case .Failure(_, _):
-          print("Couldn't download flavors!")
-          return
-        }
-        
-        // 4
-        strongSelf.flavors = strongSelf.flavorFactory.flavorsFromDictionaryArray(flavorsArray)
-        strongSelf.collectionView.reloadData()
-        strongSelf.selectFirstFlavor()
-    };
+        self.flavors = self.flavorFactory.flavorsFromPlistNamed("Flavors")
+        self.collectionView.reloadData()
+        self.selectFirstFlavor()
   }
   
   private func showLoadingHUD() {
